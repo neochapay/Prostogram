@@ -1,4 +1,4 @@
-import QtQuick 2.0
+import QtQuick 2.1
 import Sailfish.Silica 1.0
 import QtMultimedia 5.0
 import "../components"
@@ -222,14 +222,12 @@ Page {
                     onClicked: pageStack.push(Qt.resolvedUrl("MediaStreamPage.qml"),{mode : MediaStreamMode.USER_MODE, streamData: recentMediaData,tag: user.pk, streamTitle: user.username})
                 }
             }
-
-
+            
             GridView {
                 cellWidth: patent.width/3
                 anchors.left: parent.left
                 anchors.right: parent.right
                 model: recentMediaModel
-
 
                 delegate: SmallMediaElement{}
             }

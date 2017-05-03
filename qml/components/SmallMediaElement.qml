@@ -2,7 +2,6 @@ import QtQuick 2.0
 
 Rectangle {
     id: images
-
     property var item
 
     color: "transparent"
