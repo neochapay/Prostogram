@@ -10,6 +10,7 @@
 #include <QTranslator>
 
 #include "QtInstagram/src/api/instagram.h"
+#include "cacheimage.h"
 
 int main(int argc, char *argv[])
 {
@@ -32,10 +33,12 @@ int main(int argc, char *argv[])
    view->rootContext()->setContextProperty("Home",QDir::homePath());
 
    qmlRegisterType<Instagram>("harbour.prostogram",1,0,"Instagram");
+   qmlRegisterType<CacheImage>("harbour.prostogram.cache",1,0,"CacheImage");
 
    QUrl pageSource = SailfishApp::pathTo("qml/harbour-prostogram.qml");
    view->setSource(pageSource);
    view->showFullScreen();
+
 
    return app->exec();
 }

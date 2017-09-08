@@ -240,6 +240,10 @@
         <source>Search user</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Explore</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>UserDetailBlock</name>
@@ -317,7 +321,7 @@
 <context>
     <name>UserSearchPage</name>
     <message>
-        <source>Search for users</source>
+        <source>Search users</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

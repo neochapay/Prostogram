@@ -3,6 +3,7 @@ import Sailfish.Silica 1.0
 import QtQuick.LocalStorage 2.0
 import org.nemomobile.dbus 2.0
 import harbour.prostogram 1.0
+import harbour.prostogram.cache 1.0
 
 import "pages"
 import "components"
@@ -64,6 +65,10 @@ ApplicationWindow {
         id: instagram
     }
 
+    CacheImage{
+        id: cache
+    }
+
     NotificationStream{
         id: notifyStream
     }
@@ -80,6 +85,10 @@ ApplicationWindow {
             instagram.login(true);
             app.need_login = false;
         }
+
+        cache.clean();
+        cache.init();
+
         return Qt.resolvedUrl(Qt.resolvedUrl("pages/CoverPage.qml"))
     }
 

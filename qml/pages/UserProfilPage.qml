@@ -349,6 +349,7 @@ Page {
     Connections{
         target: instagram
         onUserTimeLineDataReady:{
+            //print(answer);
             var data = JSON.parse(answer);
             if(data === undefined || data.items === undefined) {
                 recentMediaLoaded=true;

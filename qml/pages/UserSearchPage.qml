@@ -24,7 +24,7 @@ Page {
 
         PageHeader {
             id: header
-            title: qsTr("Search for users")
+            title: qsTr("Search users")
         }
 
         SearchField {

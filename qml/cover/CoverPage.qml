@@ -12,7 +12,7 @@ CoverBackground {
 
     property var currentCoverData
 
-    property int currentMode: CoverMode.SHOW_APPICON
+    property int currentMode: 1
 
     property int feedMediaSize : width/2
 
@@ -21,19 +21,19 @@ CoverBackground {
     onActiveChanged: refreshCover()
 
     function refreshCover() {
-        if(CoverCtl.nextChanged===false)
+        if(CoverCtl.nextChanged == false)
             return
 
         currentCoverData = CoverCtl.nextCoverData
         currentMode = CoverCtl.nextMode
         CoverCtl.nextChanged = false
-        if(currentMode===CoverMode.SHOW_FEED) loadFeedMediaData(currentCoverData)
+        if(currentMode == CoverMode.SHOW_FEED) loadFeedMediaData(currentCoverData)
     }
 
 
     //### Mode: AppIcon
     Column {
-        visible: currentMode === CoverMode.SHOW_APPICON
+        visible: currentMode = CoverMode.SHOW_APPICON
 
         anchors.centerIn: parent
         width: parent.width
@@ -51,7 +51,7 @@ CoverBackground {
 
     //### Mode: Image
     Column {
-        visible: currentMode === CoverMode.SHOW_IMAGE
+        visible: currentMode == CoverMode.SHOW_IMAGE
         width: parent.width
         spacing: Theme.paddingSmall
 
@@ -78,7 +78,7 @@ CoverBackground {
     //### Mode: Feed
 
     Grid {
-        visible: currentMode === CoverMode.SHOW_FEED
+        visible: currentMode == CoverMode.SHOW_FEED
         columns: 2
         anchors.left: parent.left
         anchors.right: parent.right

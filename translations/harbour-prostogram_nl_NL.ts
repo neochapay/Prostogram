@@ -234,11 +234,15 @@
     <name>TagSearchPage</name>
     <message>
         <source>Search for tag</source>
-        <translation>Zoeken naar sleutelwoord</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Search user</source>
-        <translation>Zoeken naar gebruiker</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Explore</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -317,8 +321,8 @@
 <context>
     <name>UserSearchPage</name>
     <message>
-        <source>Search for users</source>
-        <translation>Zoeken naar gebruikers</translation>
+        <source>Search users</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

@@ -22,7 +22,8 @@ CONFIG += sailfishapp
 SOURCES += src/harbour-prostogram.cpp \
     QtInstagram/src/api/instagram.cpp \
     QtInstagram/src/api/instagramrequest.cpp \
-    QtInstagram/src/cripto/hmacsha.cpp
+    QtInstagram/src/cripto/hmacsha.cpp \
+    src/cacheimage.cpp
 
 OTHER_FILES += qml/harbour-prostogram.qml \
     qml/cover/*.qml \
@@ -53,7 +54,9 @@ DISTFILES += \
     qml/images/volume-off.svg \
     qml/pages/UserSearchPage.qml \
     qml/images/refresh.svg \
-    qml/components/SmallMediaElement.qml
+    qml/components/SmallMediaElement.qml \
+    qml/pages/ExplorePage.qml
+
 
 TRANSLATIONS += translations/harbour-prostogram_ca.ts \
                 translations/harbour-prostogram_cs_CZ.ts \
@@ -78,6 +81,7 @@ TRANSLATIONS += translations/harbour-prostogram_ca.ts \
 HEADERS += \
     QtInstagram/src/api/instagram.h \
     QtInstagram/src/api/instagramrequest.h \
-    QtInstagram/src/cripto/hmacsha.h
+    QtInstagram/src/cripto/hmacsha.h \
+    src/cacheimage.h
 
 DEFINES += APP_VERSION=\\\"$$VERSION\\\"

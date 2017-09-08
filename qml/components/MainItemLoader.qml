@@ -39,14 +39,14 @@ Rectangle {
 
             mainLoader.item = item
 
-            if(item.media_type == 1 || item.media_type == 2)
+            if(item.media_type === 1 || item.media_type === 2)
             {
                 if(!item.isSquared)
                 {
                     image.height = parent.width/item.image_versions2.candidates[0].width*item.image_versions2.candidates[0].height
                 }
 
-                if(item.media_type == 1)
+                if(item.media_type === 1)
                 {
                     mainLoader.source = "LoaderImage.qml"
                 }
@@ -56,7 +56,7 @@ Rectangle {
                 }
 
             }
-            else if(item.media_type == 8)
+            else if(item.media_type === 8)
             {
                 var first_image = item.carousel_media.get(0);
                 if(!item.isSquared)
