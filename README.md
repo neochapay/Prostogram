@@ -1,4 +1,4 @@
-Prostogramm [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CD7MEFDNKNM9E)
+Prostogramm [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YT53SRQZU45TQ)
 ==========
 
 Unoffical Instagram client for Sailfish. Fork of sailgrande.
@@ -17,6 +17,9 @@ Current features:
 * Watch videos and caledoscope
 * Show own followers or followed users
 * Block and unblock users
+* Show stories in main screen like in Instagram
+* Show Explore Feed (popular/choosed for u or what u want to name it ^-^)
+* Fixed Follow/Unfollow, like/unlike
 
 Broken features:
 * Registration
