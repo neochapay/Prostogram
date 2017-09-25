@@ -1,4 +1,4 @@
-Prostogramm [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YT53SRQZU45TQ)
+Prostogram [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YT53SRQZU45TQ)
 ==========
 
 Unoffical Instagram client for Sailfish. Fork of sailgrande.
