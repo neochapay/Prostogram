@@ -72,7 +72,8 @@ Page {
 
         delegate:
             ThreadMessageItem {
-                pic_url: getUser(model.user_id)
+                pic_url: getUser(model.user_id);
+                isSelf: isSelfID(model.user_id);
 
             }
 
@@ -88,7 +89,6 @@ Page {
         {
             threadLoaded = false;
             instagram.getDirectThread(threadId);
-
         }
     }
 
@@ -112,10 +112,20 @@ Page {
     }
 
     function getUser(id) {
-        for(var i=0; i < user.length; i++) {
-            print(user[i].profile_pic_url)
+        //console.log(id," - ",instagram.getUsernameId());
+        if (""+id ===  ""+instagram.getUsernameId()){
+            return instagram.getProfilePic();
+
+        }
+        else for(var i=0; i < user.length; i++) {
             if(""+user[i].pk === ""+id) return user[i].profile_pic_url;
         }
+    }
+    function isSelfID(id) {
+        if( ""+id === ""+instagram.getUsernameId() ) {
+            return true;
+        }
+        else return false;
 
     }
 }

@@ -45,7 +45,9 @@ Rectangle {
        width: parent.height
        height:parent.height
        anchors.right: parent.right
-       source: app.user.profile_pic_url
+       source: {
+           instagram.setProfilePic(app.user.profile_pic_url);
+           return app.user.profile_pic_url;}
 
        anchors{
            right: parent.right
